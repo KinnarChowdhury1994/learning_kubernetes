@@ -33,7 +33,7 @@ kubectl version
 Client Version: v1.29.2
 Kustomize Version: v5.0.4-0.20230601165947-6ce0bf390ce3
 ```
-3.
+3. Interact with cluster
 ```bash
 kubectl get po -A
 ```
