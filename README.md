@@ -63,10 +63,9 @@ kubernetes            ClusterIP   10.96.0.1       <none>        443/TCP         
 ```bash
 minikube dashboard
 ```
-```
+
 ![image](https://github.com/user-attachments/assets/7b05cdd8-99fb-44bd-9266-2c74c13f0d3a)
 
-```
 9. Port Forwarding for Tunneling
 ```bash
 kubectl port-forward service/kc-flaskapp-service 5000:5000
@@ -80,7 +79,5 @@ Handling connection for 5000
 Handling connection for 5000
 Handling connection for 5000
 ```
-```
-![image](https://github.com/user-attachments/assets/8356ca58-3318-4ee5-b264-c62097c6f412)
 
-```
+![image](https://github.com/user-attachments/assets/8356ca58-3318-4ee5-b264-c62097c6f412)
