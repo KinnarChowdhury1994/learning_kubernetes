@@ -1,7 +1,7 @@
 # learning_kubernetes
 This is a simple project for kubernetes basics
 
-*** Commands
+#### Commands
 
 ```bash
 minikube start
