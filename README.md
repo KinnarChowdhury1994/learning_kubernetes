@@ -99,3 +99,8 @@ Handling connection for 5000
 ```
 
 ![image](https://github.com/user-attachments/assets/8356ca58-3318-4ee5-b264-c62097c6f412)
+
+#### Reference
+ - https://minikube.sigs.k8s.io/docs/
+ - https://kubernetes.io/docs/home/supported-doc-versions/
+ - https://kubernetes.io/docs/tutorials/hello-minikube/
