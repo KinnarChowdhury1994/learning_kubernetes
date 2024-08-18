@@ -100,6 +100,47 @@ Handling connection for 5000
 
 ![image](https://github.com/user-attachments/assets/8356ca58-3318-4ee5-b264-c62097c6f412)
 
+helm create flaskapp
+helm package flaskapp
+helm install flaskapp flaskapp-0.1.0.tgz
+NAME: flaskapp
+LAST DEPLOYED: Sun Aug 18 19:48:53 2024
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+NOTES:
+1. Get the application URL by running these commands:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=flaskapp,app.kubernetes.io/instance=flaskapp" -o jsonpath="{.items[0].metadata.name}")     
+  export CONTAINER_PORT=$(kubectl get pod --namespace default $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+  echo "Visit http://127.0.0.1:8080 to use your application"
+  kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
+
+
+helm repo add my-repo https://<your-repo-url>
+
+helm install yashflask yashflaskapp/flaskapp
+
+elm repo index . --url https://yashhelm.s3.ap-northeast-3.amazonaws.com/
+
+https://chartmuseum.com/
+
+Yash Sharma_8650
+to
+Everyone
+07:39 PM
+YS
+helm repo add yashflaskapp https://pkhelm.s3.us-west-2.amazonaws.com/
+
+helm search repo yashflaskapp
+
+
+https://prerna05-test.s3.ap-northeast-3.amazonaws.com/
+
+
+helm repo add yashflaskapp https://pkhelm.s3.us-west-2.amazonaws.com/
+
+helm repo index . --url  https://pkhelm.s3.us-west-2.amazonaws.com//kinnar/
+
 #### Reference
  - https://minikube.sigs.k8s.io/docs/
  - https://kubernetes.io/docs/home/supported-doc-versions/
